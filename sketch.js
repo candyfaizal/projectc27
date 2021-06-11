@@ -56,8 +56,9 @@ function drawLine (constraint) {
 	line(bobBodyPosition.x, bobBodyPosition.y, roofBodyX, roofBodyY);           
 }
 
-function keyPressed () {
+function keyPressed() {
 	if (keyCode === UP_ARROW) {
-		Matter.Body.applyForce(bobObject1.body, bobObject1.body.position, {x: -50, y:-45});
+
+	  Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:-55,y:-50});
 	}
 }
